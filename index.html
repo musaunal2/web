@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bu benim sitem</title>
+
+    <style>
+        body{
+            background-color: #2fa775 ;
+
+            margin-right: auto;
+            margin-left: auto;
+            padding: 1em;
+            
+	        max-width: 1200px;   
+        }
+
+        button{
+            background-color: #2a2a2a;
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        img{
+            width: 19%;
+            border-radius: 10px;
+        }
+
+        .kirmizi{
+            color: red;
+        }
+        
+        .kod{
+            width: 50%;
+            
+            background-color: rgb(195, 195, 112);
+            border: 1px solid black;
+            border-radius: 10px;
+
+            padding-top: 10px;
+            font-size: 17px;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>isim soyisim</h1>
+    <p>Merhaba, bu benim kendi kişisel sitem. siteme girdiğiniz için teşekkür ederim</p>
+    <p>
+        İletişim için lütfen <a href="iletisim.html">burayı</a>  ziyaret edin.
+    </p>
+
+
+    <h2>sevdiğim programlama dilleri</h2>
+
+    <ul>
+        <li>python</li>
+        <li>c</li>
+        <li>c++</li>
+    </ul>
+
+
+    <h2>Foor Loop</h2>
+    <p>For loop sayesinde şuları sunları yapabilirim.</p>
+
+    <pre class="kod">
+    def function():
+        print("Hello World")
+    
+    for k in range(10):
+        function()
+    </pre>
+    
+
+    <h2 class="kirmizi">galeri</h2>
+
+    <img src="resimler/tepe.jpg">
+    <img src="resimler/tepe2.jpg">
+    <img src="resimler/tepe3.jpg">
+    <img src="resimler/tepe3.jpg">
+    <img src="resimler/tepe3.jpg">
+
+
+   
+
+
+    <button onclick="tikla()">Sayı Sayalım <p id="sayacid">0</p> </button>
+
+
+    <script>
+        let sayac = 0;
+
+
+        function tikla()
+        {
+            sayac += 1;
+            document.getElementById("sayacid").innerText = sayac;
+        }
+
+    </script>
+</body>
+
+</html>
